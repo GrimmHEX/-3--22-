@@ -1,2 +1,2 @@
-# -3--22-
-Word Seacher
+# Word Seacher ПИ-22Б Зенцов Данил
+Вариант: Word Seacher
