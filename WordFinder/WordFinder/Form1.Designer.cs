@@ -57,6 +57,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // text_SearchTerm
             // 
@@ -77,10 +78,12 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Найти";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // label2
             // 
@@ -100,6 +103,7 @@
             this.label_CurrentFile.Size = new System.Drawing.Size(84, 13);
             this.label_CurrentFile.TabIndex = 14;
             this.label_CurrentFile.Text = "Текущий файл:";
+            this.label_CurrentFile.Click += new System.EventHandler(this.label3_Click);
             // 
             // list_SearchResults
             // 
@@ -113,6 +117,7 @@
             this.list_SearchResults.TabIndex = 15;
             this.list_SearchResults.UseCompatibleStateImageBehavior = false;
             this.list_SearchResults.View = System.Windows.Forms.View.Details;
+            this.list_SearchResults.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -131,6 +136,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(401, 187);
             this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -165,6 +171,7 @@
             this.button3.TabIndex = 20;
             this.button3.Text = "Удалить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -190,6 +197,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "Изменить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -199,6 +207,7 @@
             this.button5.TabIndex = 24;
             this.button5.Text = "Сохранить";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -223,6 +232,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "WordFinder Зенцов Данил/Ивлев Данил ПИ-22Б";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
